@@ -1,7 +1,5 @@
 package gui.view;
 
-import java.awt.Color;
-
 import javax.swing.JFrame;
 import gui.controller.GUIController;
 
@@ -22,7 +20,6 @@ public class CatFrame extends JFrame
 	{
 		this.setContentPane(appPanel);
 		this.setSize(800, 800);
-		this.setBackground(Color.green);
 		this.setTitle("There is an invisible cat here, I promise.");
 		this.setResizable(true);
 		this.setVisible(true);

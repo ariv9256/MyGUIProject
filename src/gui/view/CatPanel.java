@@ -1,6 +1,6 @@
 package gui.view;
 
-import javax.swing.JPanel;
+import javax.swing.* ;
 import gui.controller.GUIController;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -37,14 +37,25 @@ public class CatPanel extends JPanel
 	}
 	private void setupPanel()
 	{
-		
+		this.setLayout(appLayout);
+		this.add(firstButton);
+		this.add(firstLabel);
 	}
 	private void setupLayout()
 	{
-		
+		appLayout.putConstraint(SpringLayout.NORTH, firstLabel, 74, SpringLayout.NORTH, this);
+		appLayout.putConstraint(SpringLayout.EAST, firstLabel, -90, SpringLayout.EAST, this);
+		appLayout.putConstraint(SpringLayout.WEST, firstButton, 175, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.SOUTH, firstButton, -135, SpringLayout.SOUTH, this);
 	}
 	private void setupListeners()
 	{
-		
+		firstButton.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent mouseClick)
+			{
+				changeBackground();
+			}
+		});
 	}
 }
