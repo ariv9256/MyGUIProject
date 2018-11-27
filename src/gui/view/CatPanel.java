@@ -44,9 +44,9 @@ public class CatPanel extends JPanel
 	}
 	private void setupLayout()
 	{
-		appLayout.putConstraint(SpringLayout.NORTH, firstLabel, 74, SpringLayout.NORTH, this);
-		appLayout.putConstraint(SpringLayout.EAST, firstLabel, -90, SpringLayout.EAST, this);
-		appLayout.putConstraint(SpringLayout.WEST, firstButton, 175, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.NORTH, firstLabel, 100, SpringLayout.NORTH, this);
+		appLayout.putConstraint(SpringLayout.EAST, firstLabel, -350, SpringLayout.EAST, this);
+		appLayout.putConstraint(SpringLayout.WEST, firstButton, 350, SpringLayout.WEST, this);
 		appLayout.putConstraint(SpringLayout.SOUTH, firstButton, -135, SpringLayout.SOUTH, this);
 	}
 	private void setupListeners()
