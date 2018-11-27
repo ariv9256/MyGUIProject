@@ -34,6 +34,7 @@ public class CatPanel extends JPanel
 		int green = (int)(Math.random() * 256);
 		int blue = (int)(Math.random() * 256);
 		this.setBackground(new Color(red, green, blue));
+		firstLabel.setText("Red: " +red + " Green: " +green+ " Blue: " +blue);
 	}
 	private void setupPanel()
 	{
